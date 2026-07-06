@@ -12,7 +12,7 @@ scaler = joblib.load("scaler.pkl")
 # ============================================
 # Sidebar
 # ============================================
-st.info("Enter all details to predict the house price")
+st.info("📌 Fill in all the property details below and click 'Predict House Price' to estimate the house value.")
 st.sidebar.title("📊 Model Information")
 
 st.sidebar.success("Model Loaded Successfully")
@@ -51,18 +51,21 @@ with col1:
     )
 
     housing_age = st.number_input(
-        "Housing Median Age",
-        value=0
+        "Average House Age (Years)",
+        value=0,
+        help="Average age of houses in this area."
     )
 
     total_bedrooms = st.number_input(
         "Total Bedrooms",
-        value=0
+        value=0,
+        help="Total no of bedrooms in the building."
     )
 
     households = st.number_input(
-        "Households",
-        value=0
+        "Number of Households",
+        value=0,
+        help="Total number of households in this area."
     )
 
 with col2:
@@ -75,17 +78,19 @@ with col2:
     )
 
     total_rooms = st.number_input(
-        "Total Rooms",
-        value=0
+        "Total Rooms in the Building",
+        value=0,
+        help="Total number of rooms in the building."
     )
 
     population = st.number_input(
-        "Population",
-        value=0
+        "Area Population",
+        value=0,
+        help="Total population living in this area."
     )
 
     median_income = st.number_input(
-        "Median Income",
+         "Average Area Income (×$10,000)",
         value=0.0,
         help="Example: 8.5 means approximately $85,000 annual median income."
     )
@@ -95,7 +100,7 @@ with col2:
 # ============================================
 
 ocean_proximity = st.selectbox(
-    "Ocean Proximity",
+    "Distance From Ocean",
     (
         "<1H OCEAN",
         "INLAND",
@@ -139,12 +144,12 @@ if st.button("Predict House Price"):
 
         "longitude":[longitude],
         "latitude":[latitude],
-        "Average House Age":[housing_age],
+        "housing_median_age":[housing_age],
         "total_rooms":[total_rooms],
         "total_bedrooms":[total_bedrooms],
         "population":[population],
         "households":[households],
-        "Average Income(x$10,000)":[median_income]
+        "median_income":[median_income]
 
     })
 
