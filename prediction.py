@@ -12,7 +12,7 @@ scaler = joblib.load("scaler.pkl")
 # ============================================
 # Sidebar
 # ============================================
-
+st.info("Enter all details to predict the house price")
 st.sidebar.title("📊 Model Information")
 
 st.sidebar.success("Model Loaded Successfully")
