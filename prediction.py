@@ -87,6 +87,7 @@ with col2:
     median_income = st.number_input(
         "Median Income",
         value=0.0
+        help="Example: 8.5 means approximately $85,000 annual median income."
     )
 
 # ============================================
@@ -138,12 +139,12 @@ if st.button("Predict House Price"):
 
         "longitude":[longitude],
         "latitude":[latitude],
-        "housing_median_age":[housing_age],
+        "Average House Age":[housing_age],
         "total_rooms":[total_rooms],
         "total_bedrooms":[total_bedrooms],
         "population":[population],
         "households":[households],
-        "median_income":[median_income]
+        "Average Income(x$10,000)":[median_income]
 
     })
 
