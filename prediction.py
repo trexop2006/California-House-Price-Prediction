@@ -92,7 +92,7 @@ with col2:
     median_income = st.number_input(
          "Average Area Income (×$10,000)",
         value=0.0,
-        help="Example: 8.5 means approximately $85,000 annual median income."
+        help=" For Example: If you enter 8.5 so it means approximately $85,000 annual median income."
     )
 
 # ============================================
