@@ -45,44 +45,44 @@ with col1:
 
     longitude = st.number_input(
         "Longitude",
-        value=-122.23
+        value=-0.0
     )
 
     housing_age = st.number_input(
         "Housing Median Age",
-        value=41
+        value=0
     )
 
     total_bedrooms = st.number_input(
         "Total Bedrooms",
-        value=129
+        value=0
     )
 
     households = st.number_input(
         "Households",
-        value=126
+        value=0
     )
 
 with col2:
 
     latitude = st.number_input(
         "Latitude",
-        value=37.88
+        value=0.0
     )
 
     total_rooms = st.number_input(
         "Total Rooms",
-        value=880
+        value=0
     )
 
     population = st.number_input(
         "Population",
-        value=322
+        value=0
     )
 
     median_income = st.number_input(
         "Median Income",
-        value=8.3252
+        value=0.0
     )
 
 # ============================================
