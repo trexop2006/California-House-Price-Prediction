@@ -244,7 +244,7 @@ if st.button("Predict House Price"):
     )
 
     st.balloons()
-
+st.info("⚠️ This prediction is an estimate based on the trained machine learning model and should not be considered an exact market value.")
 # ============================================
 # Footer
 # ============================================
