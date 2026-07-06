@@ -86,7 +86,7 @@ with col2:
 
     median_income = st.number_input(
         "Median Income",
-        value=0.0
+        value=0.0,
         help="Example: 8.5 means approximately $85,000 annual median income."
     )
 
