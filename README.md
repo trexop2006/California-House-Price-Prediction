@@ -3,6 +3,11 @@
 An end-to-end Machine Learning project that predicts California house prices using **XGBoost Regression**. The project includes data preprocessing, feature engineering, hyperparameter tuning, model evaluation, and deployment with **Streamlit**.
 
 ---
+# 🏠 California House Price Prediction
+
+## 🌐 Live Demo
+
+https://california-house-price-prediction-vzcxmyeai7gmn9zg2knlpv.streamlit.app/
 
 ## 📌 Project Overview
 
