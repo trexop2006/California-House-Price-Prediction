@@ -23,9 +23,6 @@ st.sidebar.write("XGBoost Regressor")
 st.sidebar.write("### Dataset")
 st.sidebar.write("California Housing Dataset")
 
-st.sidebar.write("### Performance")
-st.sidebar.write("R² Score : 0.8425")
-st.sidebar.write("RMSE : 45429.15")
 
 # ============================================
 # Title
