@@ -45,7 +45,9 @@ with col1:
 
     longitude = st.number_input(
         "Longitude",
-        value=-0.0
+        value=0.0
+        format="%.6f",
+        step=0.000001
     )
 
     housing_age = st.number_input(
@@ -68,6 +70,8 @@ with col2:
     latitude = st.number_input(
         "Latitude",
         value=0.0
+        format="%.6f",
+        step=0.000001
     )
 
     total_rooms = st.number_input(
